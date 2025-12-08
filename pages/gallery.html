@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Navkrishi Trade</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- GLightbox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/s.css"> -->
+</head>
+
+<body>
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasTopLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul>
+                <li class="list-unstyled">
+                    <a class="text-decoration-none text" href="../index.html">
+                        Home
+                    </a>
+                </li>
+                <li class="list-unstyled">
+                    <a class="text-decoration-none text" href="./abdm.html">
+                        About
+                    </a>
+                </li>
+                <li class="list-unstyled">
+                    <a class="text-decoration-none text" href="./gallery.html">
+                        Gallery
+                    </a>
+                </li>
+                <li class="list-unstyled">
+                    <a class="text-decoration-none text" href="./contact.html">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <div class="container d-flex justify-content-between align-items-center py-2">
+            <div class="col-10 col-md-5 col-lg-4">
+                <a class="brand" href="./index.html" class="d-flex">
+                    <img src="../images/logo-removebg-preview.png" alt="Navkrishi logo" style="width: 24%;">
+
+                    <h1 class="h4" style="text-decoration: none;">Navkrishi<span style="color:var(--nav-red)">
+                            Trade</span></h1>
+                </a>
+            </div>
+            <div class="d-flex align-items-center">
+                <nav class="me-2 d-none d-md-block">
+                    <a href="../index.html" class="text-none text">Home</a>
+                    <a href="./abdm.html" class="text-none text">About</a>
+                    <a href="./gallery.html" class="text-none text">Gallery</a>
+                    <a href="./contact.html" class="text-none text">Contact</a>
+                </nav>
+                <div class="d-block d-md-none">
+                    <i class="bi bi-list" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                        aria-controls="offcanvasTop"></i>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- BANNER -->
+    <section class="banner">
+        <h1 data-aos="fade-down">Our Gallery</h1>
+    </section>
+
+    <!-- FILTER BUTTONS -->
+    <div class="container text-center my-5 filter-btns" data-aos="zoom-in">
+        <button class="active col-12 col-md-4 col-lg-3" data-filter="all">All</button>
+        <button data-filter="spices" class="col-12 col-md-4 col-lg-3">Spices</button>
+        <button data-filter="seeds" class="col-12 col-md-4 col-lg-3">Seeds</button>
+        <button data-filter="grains" class="col-12 col-md-4 col-lg-3">Grains</button>
+        <button data-filter="export" class="col-12 col-md-4 col-lg-3">HandCraft Items</button>
+    </div>
+
+    <!-- GALLERY GRID -->
+    <div class="container">
+        <div class="row g-4" id="gallery">
+
+            <!-- SPICES -->
+            <div class="col-md-4 gallery-item spices" data-aos="fade-up">
+                <a href="../images/turmeric.jpg" class="glightbox">
+                    <div class="gallery-img">
+                        <img src="../images/turmeric.jpg">
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4 gallery-item spices" data-aos="fade-up" data-aos-delay="150">
+                <a href="../images/chilli-powder.png" class="glightbox">
+                    <div class="gallery-img">
+                        <img src="../images/chilli-powder.png">
+                    </div>
+                </a>
+            </div>
+
+            <!-- SEEDS -->
+            <div class="col-md-4 gallery-item seeds" data-aos="fade-up">
+                <a href="../images/IMG_3299.jpg" class="glightbox">
+                    <div class="gallery-img">
+                        <img src="../images/IMG_3299.jpg">
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4 gallery-item seeds" data-aos="fade-up" data-aos-delay="150">
+                <a href="../images/IMG_4046.jpg" class="glightbox">
+                    <div class="gallery-img">
+                        <img src="../images/IMG_4046.jpg">
+                    </div>
+                </a>
+            </div>
+
+            <!-- GRAINS -->
+            <div class="col-md-4 gallery-item grains" data-aos="fade-up">
+                <a href="../images/IMG_4784.jpg" class="glightbox">
+                    <div class="gallery-img">
+                        <img src="../images/IMG_4784.jpg">
+                    </div>
+                </a>
+            </div>
+
+            <!-- EXPORT MOMENTS -->
+            <div class="col-md-4 gallery-item export" data-aos="fade-up" data-aos-delay="200">
+                <a href="../images/hand1.jpg" class="glightbox">
+                    <div class="gallery-img">
+                        <img src="../images/hand1.jpg">
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4 gallery-item export" data-aos="fade-up" data-aos-delay="250">
+                <a href="../images/hand2.jpg" class="glightbox">
+                    <div class="gallery-img">
+                        <img src="../images/hand2.jpg">
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 gallery-item export" data-aos="fade-up" data-aos-delay="200">
+                <a href="../images/hand4.jpg" class="glightbox">
+                    <div class="gallery-img">
+                        <img src="../images/hand4.jpg">
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4 gallery-item export" data-aos="fade-up" data-aos-delay="250">
+                <a href="../images/hand3.jpg" class="glightbox">
+                    <div class="gallery-img">
+                        <img src="../images/hand3.jpg">
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <h3 class="brand"><img src="../images/logo-removebg-preview.png" style="width: 25%;" alt=""></h3>
+                <p>Delivering Quality Agri-Products From India To The World</p>
+            </div>
+
+            <div class="footer-links">
+                <div>
+                    <h4>Quick Links</h4>
+                    <a href="../index.html">Home</a>
+                    <a href="./abdm.html">About</a>
+                    <a href="./gallery.html">Gallery</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+
+                <div>
+                    <h4>Contact Us</h4>
+                    <p class="text">📞 +91 9023425562</p>
+                     <p class="text"><i class="bi bi-whatsapp text-danger"></i>  +91 93165 92651</p>
+                    <p class="text">📧 smit.navkrishitrade@gmail.com</p>
+                    <p class="text">📍 Ahmedabad, Gujarat, India</p>
+                </div>
+
+                <div>
+                   <h4>Follow Us</h4>
+                <a href="https://www.facebook.com/profile.php?id=61580376825364">Facebook</a>
+                <a href="https://www.instagram.com/navkrishitrade?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a>
+                <a href="https://www.linkedin.com/company/navkrishi-trade/posts/?feedView=all">LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 Navkrishi Trade | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="../js/gallery.js">
+      
+    </script>
+
+</body>
+
+</html>
